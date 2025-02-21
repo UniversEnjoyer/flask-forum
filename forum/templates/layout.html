@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>{{title}}</title>
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+        {% include 'navigation.html' %}
+        {% block content %}{% endblock %}
+    </body>
+
+</html>
