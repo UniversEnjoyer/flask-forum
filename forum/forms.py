@@ -1,6 +1,7 @@
 """Forms declaration"""
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
+from wtforms.fields.simple import TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
 
 class RegistrationForm(FlaskForm):
@@ -41,3 +42,18 @@ class LoginForm(FlaskForm):
         ]
     )
     submit = SubmitField('Log In')
+
+class PostForm(FlaskForm):
+    title = StringField(
+        'Title',
+        [
+            DataRequired()
+        ]
+    )
+    description = TextAreaField(
+        'Description',
+        [
+            DataRequired()
+        ]
+    )
+    submit = SubmitField('Post')
