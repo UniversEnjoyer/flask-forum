@@ -1,7 +1,11 @@
 <header>
     <nav>
-        <a href="">Link 1</a>
-        <a href="">Link 2</a>
-        <a href="">Link 3</a>
+        <a href="{{ url_for('home') }}">Home</a>
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+            <a href="{{ url_for('signup') }}">Register</a>
+            <a href="{{ url_for('signin') }}">Login</a>
+        {% endif %}
     </nav>
 </header>

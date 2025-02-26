@@ -7,9 +7,9 @@
 {% block content %}
 
   <div class="form-wrapper">
-    <h2 class="title">Register</h2>
+    <h2 class="title">Login</h2>
 
-    <form method="POST" action="{{ url_for('signup') }}">
+    <form method="POST" action="{{ url_for('signin') }}">
       {{ form.hidden_tag() }}
 
       <fieldset class="form-field">
@@ -18,18 +18,8 @@
       </fieldset>
 
       <fieldset class="form-field">
-        {{ form.email.label }}
-        {{ form.email }}
-      </fieldset>
-
-      <fieldset class="form-field">
         {{ form.password.label }}
         {{ form.password }}
-      </fieldset>
-
-      <fieldset class="form-field">
-        {{ form.confirm.label }}
-        {{ form.confirm }}
       </fieldset>
 
       {{ form.submit }}
