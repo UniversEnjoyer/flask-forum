@@ -1,0 +1,32 @@
+.form-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: black;
+  color: white;
+}
