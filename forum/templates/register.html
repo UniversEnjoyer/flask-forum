@@ -1,12 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block css %}
-  <link href="{{ url_for('static', filename='css/form.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 
-  <div class="form-wrapper">
+  <div class="wrapper">
     <h2 class="title">Register</h2>
 
     <form method="POST" action="{{ url_for('signup') }}">

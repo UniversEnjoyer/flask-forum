@@ -1,4 +1,34 @@
-.form-wrapper {
+.header {
+    padding = 60px;
+    text_align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text_align: center;
+    padding: 14px 20px;
+    text_decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.wrapper {
     background: #fff;
     padding: 20px;
     border-radius: 8px;

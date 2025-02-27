@@ -12,8 +12,8 @@ from forum.models import Post
 def home():
     return render_template(
         'home.html',
-        title='Home Test Page',
-        description='Default Home description',
+        title='Forum Home Test Page',
+        description='Forum description',
         posts=Post.query.all()
     )
 
