@@ -26,6 +26,8 @@ class User(UserMixin, db.Model):
         unique=False
     )
 
+    posts = db.relationship('Post', backref='task')
+
     def __repr__(self):
         return '<User {}>'.format(self.username)
 
@@ -41,4 +43,10 @@ class Post(db.Model):
 
     description = db.Column(
         db.String
+    )
+
+    user_id = db.Column(
+        db.Integer,
+        db.ForeignKey('user.id'),
+        nullable=False
     )
