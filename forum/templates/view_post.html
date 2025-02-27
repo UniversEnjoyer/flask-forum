@@ -20,6 +20,11 @@
       </fieldset>
 
       </form>
+
+      {% if can_edit %}
+        <p>You can edit</p>
+        <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete Post</a>
+      {% endif %}
   </div>
 
 {% endblock %}

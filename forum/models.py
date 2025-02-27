@@ -26,7 +26,7 @@ class User(UserMixin, db.Model):
         unique=False
     )
 
-    posts = db.relationship('Post', backref='task')
+    posts = db.relationship('Post', backref='user')
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
