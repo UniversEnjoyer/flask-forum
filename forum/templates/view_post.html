@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/form.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+  <div class="form-wrapper">
+    <h2 class="title"></h2>
+
+    <form method="POST" action="">
+
+      <fieldset class="form-field">
+        {{ post.title }}
+      </fieldset>
+
+      <fieldset class="form-field">
+        {{ post.description }}
+      </fieldset>
+
+      </form>
+  </div>
+
+{% endblock %}

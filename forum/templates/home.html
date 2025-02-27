@@ -6,7 +6,11 @@
         <p>{{description}}</p>
         {% if current_user.is_authenticated %}
             <p>Hi {{ current_user.name }}!</p>
-            <a href="">Log out</a>
         {% endif %}
+        <ul>
+            {% for post in posts %}
+                <li> <a href="{{ url_for('view_post', post_id=post.id) }}">{{ post.title }}</a> </li>
+            {% endfor %}
+        </ul>
     </div>
 {% endblock %}
