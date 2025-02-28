@@ -44,6 +44,25 @@
   margin-bottom: 15px;
 }
 
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.post-item {
+  display: block;
+  padding: 15px;
+  background: #f9f9f9;
+  color: #333;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
 input[type="submit"] {
     background: #f1f1f1;
     color: black;

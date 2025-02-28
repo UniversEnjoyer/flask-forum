@@ -12,7 +12,7 @@ from forum.models import Post
 def home():
     return render_template(
         'home.html',
-        title='Forum Home Test Page',
+        title='Forum Home Page',
         description='Forum description',
         posts=Post.query.all()
     )

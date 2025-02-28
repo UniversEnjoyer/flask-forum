@@ -11,10 +11,10 @@
         {% if current_user.is_authenticated %}
             <p>Hi {{ current_user.username }}!</p>
         {% endif %}
-        <ul>
+        <div class = "posts">
             {% for post in posts %}
-                <li> <a href="{{ url_for('view_post', post_id=post.id) }}">{{ post.title }}</a> </li>
+                <a class = "post-item" href="{{ url_for('view_post', post_id=post.id) }}">{{ post.title }}</a>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 {% endblock %}
